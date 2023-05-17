@@ -6,6 +6,7 @@ const forecast=require('./utils/forecast')
 console.log(path.join(__dirname,'../public'))
 console.log(__filename)
 const app = express()
+const port = process.env.PORT || 3000
 //app.com
 //app.com/help
 //app.com/about
@@ -98,6 +99,6 @@ app.get('*', (req, res) => {
     errorMessage: 'Page not found'
   })
 })
-app.listen(3000, () => {
-  console.log('Server running 3000')
+app.listen(port, () => {
+  console.log('Server running', port)
 })
