@@ -1,0 +1,6 @@
+h1{
+  color: gray;
+}
+.main-content{
+  flex-grow: 1;
+}
